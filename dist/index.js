@@ -16,45 +16,24 @@ document.addEventListener("DOMContentLoaded", function () {
   }, 10);
 });
 
-// import { animationSlide } from "./gasp.ts";
+document.addEventListener("DOMContentLoaded", function () {
+  function countUp(elementSelector, targetNumber, suffix = "", delay = 100) {
+    var countElement = document.querySelector(elementSelector);
+    var currentNumber = 0;
+    var increment = Math.ceil(targetNumber / 10);
 
-const setupSwiper = () => {
-  console.log(123123);
-  const defaultSetting = {
-    loop: true,
-    autoHeight: true,
-    spaceBetween: 30,
-    // pagination: {
-    //   el: '.swiper-pagination',
-    //   type: 'bullets',
-    //   clickable: true
-    // },
-    // on: {
-    //   init: (el: any) => animationSlide(el.slides[el.activeIndex], 0),
-    //   slideChangeTransitionStart: (el: any) => animationSlide(el.slides[el.activeIndex], 0),
-    // },
-    autoplay: {
-      delay: 5000,
-    },
-  };
-  // new Swiper(".mySwiper", {
-  //   ...defaultSetting,
-  //   slidesPerView: 3,
-  // });
+    var interval = setInterval(function () {
+      countElement.textContent = currentNumber.toLocaleString() + suffix;
 
-  new Swiper(".mySwiper", {
-    ...defaultSetting,
-    slidesPerView: 3,
-    navigation: false,
-  });
+      if (currentNumber >= targetNumber) {
+        clearInterval(interval);
+      }
 
-  new Swiper(".mySwiperContent", {
-    ...defaultSetting,
-    slidesPerView: 1,
-    navigation: {
-      nextEl: ".swiper-btn-next",
-      prevEl: ".swiper-btn-prev",
-    },
-  });
-};
-setupSwiper();
+      currentNumber += increment;
+    }, delay);
+  }
+  countUp(".count-patients", 200, "");
+  countUp(".count-hearts", 20, "");
+  countUp(".count-doctors", 10, "K");
+  countUp(".count-works", 900, "");
+});
