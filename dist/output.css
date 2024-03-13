@@ -560,10 +560,6 @@ video {
   position: relative;
 }
 
-.-bottom-10 {
-  bottom: -2.5rem;
-}
-
 .-bottom-24 {
   bottom: -6rem;
 }
@@ -578,6 +574,10 @@ video {
 
 .bottom-10 {
   bottom: 2.5rem;
+}
+
+.bottom-40 {
+  bottom: 10rem;
 }
 
 .left-0 {
@@ -1658,6 +1658,12 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition-transform {
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1701,13 +1707,34 @@ video {
   border-top-width: 1px;
 }
 
-.hover\:-translate-x-1:hover {
-  --tw-translate-x: -0.25rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+.swiper {
+  width: 100%;
+  height: 100%;
 }
 
-.hover\:-translate-x-2:hover {
-  --tw-translate-x: -0.5rem;
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hover\:ml-1:hover {
+  margin-left: 0.25rem;
+}
+
+.hover\:-translate-x-1:hover {
+  --tw-translate-x: -0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1716,9 +1743,9 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:scale-105:hover {
-  --tw-scale-x: 1.05;
-  --tw-scale-y: 1.05;
+.hover\:scale-110:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1849,10 +1876,6 @@ video {
   .sm\:flex {
     display: flex;
   }
-
-  .sm\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 }
 
 @media (min-width: 768px) {
@@ -1901,10 +1924,6 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .xl\:right-80 {
-    right: 20rem;
-  }
-
   .xl\:mx-16 {
     margin-left: 4rem;
     margin-right: 4rem;
