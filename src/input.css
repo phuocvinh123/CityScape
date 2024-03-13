@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.count-animate {
+  font-weight: medium;
+  text-xl: 2;
+  animation-name: countAnimation;
+  animation-duration: 4s;
+}
+@keyframes countAnimation {
+  100% {
+    content: "4000+";
+  }
+}
+.mt-item {
+  margin-top: 4.1rem;
+}
+.border-1px {
+  border-top-width: 1px;
+}

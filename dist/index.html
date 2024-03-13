@@ -1,0 +1,1753 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CityScape</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="./output.css" />
+    <link
+      rel="stylesheet"
+      href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/line-awesome@1/dist/line-awesome/css/line-awesome.min.css"
+      rel="stylesheet"
+    />
+    <!--  line-swiper slide  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <!-- header top -->
+      <div class="bg-gray-100">
+        <div class="flex justify-between max-w-7xl mx-auto px-4 py-3">
+          <div class="flex gap-3">
+            <div class="flex gap-2 font-medium">
+              <span class="text-lg"
+                ><ion-icon name="call-outline"></ion-icon
+              ></span>
+              <p class="cursor-pointer hover:text-orange-300">(629) 555-0129</p>
+            </div>
+            <div class="font-semibold gap-2 flex">
+              <span class="text-lg"
+                ><ion-icon name="mail-outline"></ion-icon
+              ></span>
+              <p class="cursor-pointer hover:text-orange-300">
+                info@example.com
+              </p>
+            </div>
+          </div>
+          <div class="font-semibold gap-2 hidden sm:flex">
+            <span class="text-lg"
+              ><ion-icon name="location-outline"></ion-icon
+            ></span>
+            <p class="cursor-pointer hover:text-orange-300">
+              6391 Elgin St. Celina, 10299
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- header star -->
+      <header>
+        <div
+          class="grid grid-cols-3 lg:grid-col-2 md:grid-col-2 py-3 px-4 max-w-7xl mx-28"
+        >
+          <div class="w-full py-3">
+            <a href="#">
+              <img
+                src="https://wowtheme7.com/tf/cityscape/assets/images/logo/logo.png"
+              />
+            </a>
+          </div>
+          <div class="flex">
+            <ul
+              class="md:hidden lg:flex items-center justify-center gap-4 py-3 hidden"
+            >
+              <li
+                class="flex items-center hover:text-orange-500 cursor-pointer font-semibold rounded-md text-base relative group"
+              >
+                <span class="mr-2 text-orange-500">Home</span>
+                <ion-icon
+                  name="chevron-down-outline"
+                  class="text-xs"
+                ></ion-icon>
+                <div
+                  class="absolute top-0 transition opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform z-50 min-w-[200px] transform"
+                >
+                  <div
+                    class="relative top-6 p-6 bg-white rounded-xl shadow-xl w-full"
+                  >
+                    <div
+                      class="w-10 h-10 bg-white transform rotate-45 absolute top-0 z-0 translate-x-0 transition-transform group-hover:translate-x-[12rem] duration-500 ease-in-out rounded-sm"
+                    ></div>
+
+                    <div class="relative z-10">
+                      <div>
+                        <ul class="mt-3 text-[15px]">
+                          <li>
+                            <a
+                              href="#"
+                              class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600"
+                            >
+                              <ion-icon
+                                name="chevron-forward-outline"
+                              ></ion-icon>
+                              Home One
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600"
+                            >
+                              Home Two
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600"
+                            >
+                              Home Three
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600"
+                            >
+                              Home Four
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600"
+                            >
+                              Home Five
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600"
+                            >
+                              Home Video
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600"
+                            >
+                              Home Map
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="flex items-center hover:text-orange-500 cursor-pointer font-semibold rounded-md text-base relative group"
+              >
+                <span class="mr-2">Pages</span>
+                <ion-icon
+                  name="chevron-down-outline"
+                  class="text-xs"
+                ></ion-icon>
+                <div
+                  class="absolute top-0 transition opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform z-50 min-w-[200px] transform"
+                >
+                  <div
+                    class="relative top-6 p-6 bg-white rounded-xl shadow-xl w-full"
+                  >
+                    <div
+                      class="w-10 h-10 bg-white transform rotate-45 absolute top-0 z-0 translate-x-0 transition-transform group-hover:translate-x-[12rem] duration-500 ease-in-out rounded-sm"
+                    ></div>
+
+                    <div class="relative z-10">
+                      <div>
+                        <ul class="mt-3 text-[15px]">
+                          <li>
+                            <a
+                              href="#"
+                              class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600"
+                            >
+                              Property
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600"
+                            >
+                              Property Sidebar
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600"
+                            >
+                              Property Details
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600"
+                            >
+                              Add new Listing
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600"
+                            >
+                              Map Location
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600"
+                            >
+                              About Us
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600"
+                            >
+                              FAQ
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600"
+                            >
+                              Checkout
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600"
+                            >
+                              Cart
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600"
+                            >
+                              Login
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600"
+                            >
+                              Account
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="flex items-center hover:text-orange-500 cursor-pointer font-semibold rounded-md text-base relative group"
+              >
+                <span class="mr-2">Project</span>
+                <ion-icon
+                  name="chevron-down-outline"
+                  class="text-xs"
+                ></ion-icon>
+                <div
+                  class="absolute top-0 transition opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform z-50 min-w-[200px] transform"
+                >
+                  <div
+                    class="relative top-6 p-6 bg-white rounded-xl shadow-xl w-full"
+                  >
+                    <div
+                      class="w-10 h-10 bg-white transform rotate-45 absolute top-0 z-0 translate-x-0 transition-transform group-hover:translate-x-[12rem] duration-500 ease-in-out rounded-sm"
+                    ></div>
+
+                    <div class="relative z-10">
+                      <div>
+                        <ul class="mt-3 text-[15px]">
+                          <li>
+                            <a
+                              href="#"
+                              class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600"
+                            >
+                              Project
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600"
+                            >
+                              Project Details
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="flex items-center hover:text-orange-500 cursor-pointer font-semibold rounded-md text-base relative group"
+              >
+                <span class="mr-2">Blog</span>
+                <ion-icon
+                  name="chevron-down-outline"
+                  class="text-xs"
+                ></ion-icon>
+                <div
+                  class="absolute top-0 transition opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform z-50 min-w-[200px] transform"
+                >
+                  <div
+                    class="relative top-6 p-6 bg-white rounded-xl shadow-xl w-full"
+                  >
+                    <div
+                      class="w-10 h-10 bg-white transform rotate-45 absolute top-0 z-0 translate-x-0 transition-transform group-hover:translate-x-[12rem] duration-500 ease-in-out rounded-sm"
+                    ></div>
+
+                    <div class="relative z-10">
+                      <div>
+                        <ul class="mt-3 text-[15px]">
+                          <li>
+                            <a
+                              href="#"
+                              class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600"
+                            >
+                              Blog Classic
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600"
+                            >
+                              Blog Details
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="flex items-center hover:text-orange-500 cursor-pointer font-semibold rounded-md text-base"
+              >
+                <span class="mr-2">Contact</span>
+              </li>
+            </ul>
+          </div>
+          <div class="flex gap-10 justify-end py-3">
+            <button
+              type="button"
+              class="offcanvas-btn d-lg-block d-none hidden lg:block md:hidden"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="24"
+                viewBox="0 0 30 24"
+                fill="none"
+              >
+                <line
+                  x1="0.0078125"
+                  y1="12.293"
+                  x2="30.0078"
+                  y2="12.293"
+                  stroke="#181616"
+                  stroke-width="3"
+                ></line>
+                <path
+                  d="M5.00781 22.293H30.0078"
+                  stroke="#181616"
+                  stroke-width="3"
+                ></path>
+                <path
+                  d="M10.0078 2.29297H30.0078"
+                  stroke="#181616"
+                  stroke-width="3"
+                ></path>
+              </svg>
+            </button>
+            <a
+              href="#"
+              class="btn btn-outline-light d-lg-block d-none hidden lg:flex md:hidden gap-4 border border-solid cursor-pointer py-4 px-6 rounded hover:bg-gray-200"
+              >Sell Property
+              <span class="icon-right text-gradient icon">
+                <i class="fas fa-arrow-right text-orange-300"></i>
+              </span>
+            </a>
+            <button
+              type="button"
+              class="toggle-mobileMenu d-lg-none text-4xl hidden md:block sm:block sm lg:hidden font-medium"
+            >
+              <i class="las la-bars"></i>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <!-- banner section star -->
+      <section class="bg-gray-100">
+        <div class="pt-24">
+          <div class="mx-32 grid grid-cols-2 gap-4">
+            <div class="w-full">
+              <span class="uppercase font-medium">FinTech Fusion</span>
+              <h1
+                class="my-6 gap-2 font-bold text-7xl items-center inline-block"
+              >
+                Invest today in You
+                <span class="text-orange-400">Dream Home</span>
+              </h1>
+              <p class="text-gray-500 font-normal">
+                Unlock the Power of Real Estate Making Your Real Estate Dreams a
+                Reality Real Estate here Unlock the Power of Real Estate
+              </p>
+            </div>
+            <div class="relative w-full">
+              <img
+                src="https://wowtheme7.com/tf/cityscape/assets/images/thumbs/banner-img.png"
+                alt=""
+              />
+
+              <img
+                src="https://wowtheme7.com/tf/cityscape/assets/images/shapes/shape-triangle.png"
+                alt=""
+                class="absolute top-0 left-0 animate-spin"
+              />
+              <img
+                src="https://wowtheme7.com/tf/cityscape/assets/images/shapes/shape-circle.png"
+                alt=""
+                class="absolute top-32 left-36 animate-spin"
+              />
+              <img
+                src="https://wowtheme7.com/tf/cityscape/assets/images/shapes/shape-moon.png"
+                alt=""
+                class="absolute top-44 right-0 animate-pulse"
+              />
+            </div>
+            <div
+              class="col-span-2 w-full px-32 absolute -bottom-24 left-1/2 transform -translate-x-1/2"
+              style="grid-column: 1 / span 2"
+            >
+              <ul class="flex gap-2 justify-normal">
+                <li
+                  class="border border-solid rounded px-6 py-2 cursor-pointer text-white bg-gradient-to-t from-orange-600 to-orange-400"
+                >
+                  Rent
+                </li>
+                <li
+                  class="border border-solid rounded px-6 py-2 cursor-pointer hover:text-orange-400"
+                >
+                  Buy
+                </li>
+                <li
+                  class="border border-solid rounded px-6 py-2 cursor-pointer hover:text-orange-400"
+                >
+                  Sell
+                </li>
+              </ul>
+              <div class="mt-3 border border-solid rounded-lg px-6 bg-white">
+                <div class="my-2 gap-4 py-3 flex justify-between">
+                  <div class="w-full">
+                    <input
+                      type="search"
+                      placeholder=" Enter keyword"
+                      class="w-full border rounded text-center text-lg leading-non text-gray-800 py-3 pl-3 mt-2 px-5"
+                    />
+                  </div>
+                  <div class="w-full">
+                    <select
+                      class="w-full border rounded text-center text-lg leading-non text-gray-800 py-3 pl-3 mt-2"
+                    >
+                      <option value="1" disabled="">Property Type</option>
+                      <option value="1">Apartment</option>
+                      <option value="1">House</option>
+                      <option value="1">Land</option>
+                      <option value="1">Single Family</option>
+                    </select>
+                  </div>
+
+                  <div class="w-full">
+                    <select
+                      class="w-full border rounded text-center text-lg leading-non text-gray-800 py-3 pl-3 mt-2"
+                    >
+                      <option value="1" disabled="">Location</option>
+                      <option value="1">Bangladesh</option>
+                      <option value="1">Japan</option>
+                      <option value="1">Korea</option>
+                      <option value="1">Singapore</option>
+                      <option value="1">Germany</option>
+                      <option value="1">Thailand</option>
+                    </select>
+                  </div>
+
+                  <div class="w-full mr-2">
+                    <button
+                      type="submit"
+                      class="w-full border rounded text-center text-lg leading-non py-3 mt-2 pl-3 text-white bg-gradient-to-t from-orange-600 to-orange-400"
+                    >
+                      Find Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- about section start -->
+      <section class="bg-gray-100">
+        <div class="py-28">
+          <div class="mx-32 grid grid-cols-2 gap-4">
+            <div class="bg-orange-100 relative">
+              <div class="mx-16 my-16">
+                <img
+                  src="https://wowtheme7.com/tf/cityscape/assets/images/thumbs/about-img.png"
+                  alt=""
+                  class="w-full justify-center"
+                />
+              </div>
+              <div
+                class="absolute bottom-0 left-44 w-60 bg-white border rounded-lg flex justify-center gap-4"
+              >
+                <span class="">
+                  <i
+                    class="fas fa-users text-gradient text-orange-500 text-4xl my-12"
+                  ></i>
+                </span>
+                <div class="my-10">
+                  <h5
+                    class="font-medium text-3xl count-animate"
+                    style="visibility: visible"
+                  ></h5>
+                  <span class="fs-18 text-gray-400">Satisfied Clients</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="my-16 ml-12">
+              <div>
+                <span
+                  class="uppercase border-none bg-white text-orange-500 font-semibold py-1 px-2 rounded-md"
+                  >about us</span
+                >
+                <h2 class="my-3 font-serif text-5xl">
+                  Stay with us feel at home Your perfect stay awaits
+                </h2>
+                <p class="text-gray-500 text-lg">
+                  Real Estate is a vast industry that deals with the buying,
+                  selling, and renting of properties. It inv transactions
+                  related to residential
+                </p>
+              </div>
+              <div class="flex mt-6 border rounded-md py-4 px-4 shadow-sm">
+                <div class="w-32">
+                  <img
+                    src="https://wowtheme7.com/tf/cityscape/assets/images/icons/about-icon.svg"
+                    class="w-25"
+                  />
+                </div>
+                <div class="">
+                  <h6 class="text-xl font-medium">Your Dream Home Awaits</h6>
+                  <p class="mt-3 text-gray-400 text-xs">
+                    Real Estate is a vast industry that deals with the buying,
+                    selling, and renting of properties. It inv transactions
+                    related to residential, commercial, and industrial
+                    properties
+                  </p>
+                </div>
+              </div>
+              <div class="mt-8 flex">
+                <div
+                  class="border rounded-md py-4 px-8 bg-gradient-to-t from-orange-600 to-orange-400"
+                >
+                  <a href="#" class="btn btn-main uppercase text-white"
+                    >Learn More
+                    <span class="icon-right">
+                      <i class="fas fa-arrow-right text-white ml-2"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  property Start  -->
+      <section class="bg-black">
+        <div class="py-28 mx-32">
+          <div class="grid grid-cols-2 gap-4 justify-between">
+            <div class="relative">
+              <span
+                class="uppercase font-serif text-orange-400 bg-[#232225] shadow px-2 py-1"
+              >
+                LATEST PROPERTY
+              </span>
+              <h2 class="text-white font-serif text-4xl mt-4">
+                Prestige Propert Management property for you
+              </h2>
+            </div>
+            <div class="mt-item flex justify-end items-end">
+              <div class="">
+                <a
+                  href="#"
+                  class="text-white rounded-md cursor-pointer bg-gradient-to-t from-orange-600 to-orange-400 py-4 px-8"
+                  >View More
+                  <span class="icon-right">
+                    <i class="fas fa-arrow-right ml-2"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-cols-3 gap-4 my-16 text-white">
+            <div class="hover:border-b-4 hover:border-orange-500">
+              <div class="relative">
+                <a href="#">
+                  <img
+                    src="https://wowtheme7.com/tf/cityscape/assets/images/thumbs/property-1.png"
+                    alt=""
+                    class="hover:scale-105 overflow-hidden"
+                  />
+                </a>
+                <span
+                  class="absolute top-0 right-0 bg-orange-400 rounded py-1 px-2"
+                  >Sale</span
+                >
+              </div>
+              <div class="text-white bg-[#232225] px-8">
+                <h6 class="pt-4 text-2xl">
+                  $500.00
+                  <span class="text-sm text-gray-400">/per day</span>
+                </h6>
+                <h6 class="mt-4">
+                  <a href="#" class="text-xl font-serif hover:text-orange-500"
+                    >Paramount Investments Prestige Property Management
+                  </a>
+                </h6>
+                <p class="flex gap-2 my-4 text-gray-400">
+                  <span class="icon">
+                    <i class="fas fa-map-marker-alt"></i
+                  ></span>
+                  66 Broklyant, New York America
+                </p>
+                <div class="border-1px border-gray-500 pb-8">
+                  <div class="mt-2 flex justify-between">
+                    <ul class="flex gap-4 text-sm text-gray-400">
+                      <li class="gap-2">
+                        <span class="icon"><i class="fas fa-bed"></i></span>
+                        <span class="text">3 Beds</span>
+                      </li>
+                      <li class="gap-2">
+                        <span class="icon"><i class="fas fa-bath"></i></span>
+                        <span class="text">3 Baths</span>
+                      </li>
+                    </ul>
+                    <a
+                      href="#"
+                      class="simple-btn text-gray-400 hover:text-orange-400 hover:scale-95"
+                      >Book Now
+                      <span class="icon-right">
+                        <i class="fas fa-arrow-right ml-2"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hover:border-b-4 hover:border-orange-500">
+              <div class="relative">
+                <a href="#">
+                  <img
+                    src="https://wowtheme7.com/tf/cityscape/assets/images/thumbs/property-4.png"
+                    alt=""
+                    class="hover:scale-105 overflow-hidden"
+                  />
+                </a>
+                <span
+                  class="absolute top-0 right-0 bg-orange-400 rounded py-1 px-2"
+                  >Sale</span
+                >
+              </div>
+              <div class="text-white bg-[#232225] px-8">
+                <h6 class="pt-4 text-2xl">
+                  $500.00
+                  <span class="text-sm text-gray-400">/per day</span>
+                </h6>
+                <h6 class="mt-4">
+                  <a href="#" class="text-xl font-serif hover:text-orange-500"
+                    >Paramount Investments Prestige Property Management
+                  </a>
+                </h6>
+                <p class="flex gap-2 my-4 text-gray-400">
+                  <span class="icon">
+                    <i class="fas fa-map-marker-alt"></i
+                  ></span>
+                  66 Broklyant, New York America
+                </p>
+                <div class="border-1px border-gray-500 pb-8">
+                  <div class="mt-2 flex justify-between">
+                    <ul class="flex gap-4 text-sm text-gray-400">
+                      <li class="gap-2">
+                        <span class="icon"><i class="fas fa-bed"></i></span>
+                        <span class="text">3 Beds</span>
+                      </li>
+                      <li class="gap-2">
+                        <span class="icon"><i class="fas fa-bath"></i></span>
+                        <span class="text">3 Baths</span>
+                      </li>
+                    </ul>
+                    <a
+                      href="#"
+                      class="simple-btn text-gray-400 hover:text-orange-400 hover:scale-95"
+                      >Book Now
+                      <span class="icon-right">
+                        <i class="fas fa-arrow-right ml-2"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hover:border-b-4 hover:border-orange-500">
+              <div class="relative">
+                <a href="#">
+                  <img
+                    src="https://wowtheme7.com/tf/cityscape/assets/images/thumbs/property-5.png"
+                    alt=""
+                    class="hover:scale-105 overflow-hidden"
+                  />
+                </a>
+                <span
+                  class="absolute top-0 right-0 bg-orange-400 rounded py-1 px-2"
+                  >Sale</span
+                >
+              </div>
+              <div class="text-white bg-[#232225] px-8">
+                <h6 class="pt-4 text-2xl">
+                  $500.00
+                  <span class="text-sm text-gray-400">/per day</span>
+                </h6>
+                <h6 class="mt-4">
+                  <a href="#" class="text-xl font-serif hover:text-orange-500"
+                    >Paramount Investments Prestige Property Management
+                  </a>
+                </h6>
+                <p class="flex gap-2 my-4 text-gray-400">
+                  <span class="icon">
+                    <i class="fas fa-map-marker-alt"></i
+                  ></span>
+                  66 Broklyant, New York America
+                </p>
+                <div class="border-1px border-gray-500 pb-8">
+                  <div class="mt-2 flex justify-between">
+                    <ul class="flex gap-4 text-sm text-gray-400">
+                      <li class="gap-2">
+                        <span class="icon"><i class="fas fa-bed"></i></span>
+                        <span class="text">3 Beds</span>
+                      </li>
+                      <li class="gap-2">
+                        <span class="icon"><i class="fas fa-bath"></i></span>
+                        <span class="text">3 Baths</span>
+                      </li>
+                    </ul>
+                    <a
+                      href="#"
+                      class="simple-btn text-gray-400 hover:text-orange-400 hover:scale-95"
+                      >Book Now
+                      <span class="icon-right">
+                        <i class="fas fa-arrow-right ml-2"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hover:border-b-4 hover:border-orange-500">
+              <div class="relative">
+                <a href="#">
+                  <img
+                    src="https://wowtheme7.com/tf/cityscape/assets/images/thumbs/property-6.png"
+                    alt=""
+                    class="hover:scale-105 overflow-hidden"
+                  />
+                </a>
+                <span
+                  class="absolute top-0 right-0 bg-orange-400 rounded py-1 px-2"
+                  >Sale</span
+                >
+              </div>
+              <div class="text-white bg-[#232225] px-8">
+                <h6 class="pt-4 text-2xl">
+                  $500.00
+                  <span class="text-sm text-gray-400">/per day</span>
+                </h6>
+                <h6 class="mt-4">
+                  <a href="#" class="text-xl font-serif hover:text-orange-500"
+                    >Paramount Investments Prestige Property Management
+                  </a>
+                </h6>
+                <p class="flex gap-2 my-4 text-gray-400">
+                  <span class="icon">
+                    <i class="fas fa-map-marker-alt"></i
+                  ></span>
+                  66 Broklyant, New York America
+                </p>
+                <div class="border-1px border-gray-500 pb-8">
+                  <div class="mt-2 flex justify-between">
+                    <ul class="flex gap-4 text-sm text-gray-400">
+                      <li class="gap-2">
+                        <span class="icon"><i class="fas fa-bed"></i></span>
+                        <span class="text">3 Beds</span>
+                      </li>
+                      <li class="gap-2">
+                        <span class="icon"><i class="fas fa-bath"></i></span>
+                        <span class="text">3 Baths</span>
+                      </li>
+                    </ul>
+                    <a
+                      href="#"
+                      class="simple-btn text-gray-400 hover:text-orange-400 hover:scale-95"
+                      >Book Now
+                      <span class="icon-right">
+                        <i class="fas fa-arrow-right ml-2"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hover:border-b-4 hover:border-orange-500">
+              <div class="relative">
+                <a href="#">
+                  <img
+                    src="https://wowtheme7.com/tf/cityscape/assets/images/thumbs/property-2.png"
+                    alt=""
+                    class="hover:scale-105 overflow-hidden"
+                  />
+                </a>
+                <span
+                  class="absolute top-0 right-0 bg-orange-400 rounded py-1 px-2"
+                  >Sale</span
+                >
+              </div>
+              <div class="text-white bg-[#232225] px-8">
+                <h6 class="pt-4 text-2xl">
+                  $500.00
+                  <span class="text-sm text-gray-400">/per day</span>
+                </h6>
+                <h6 class="mt-4">
+                  <a href="#" class="text-xl font-serif hover:text-orange-500"
+                    >Paramount Investments Prestige Property Management
+                  </a>
+                </h6>
+                <p class="flex gap-2 my-4 text-gray-400">
+                  <span class="icon">
+                    <i class="fas fa-map-marker-alt"></i
+                  ></span>
+                  66 Broklyant, New York America
+                </p>
+                <div class="border-1px border-gray-500 pb-8">
+                  <div class="mt-2 flex justify-between">
+                    <ul class="flex gap-4 text-sm text-gray-400">
+                      <li class="gap-2">
+                        <span class="icon"><i class="fas fa-bed"></i></span>
+                        <span class="text">3 Beds</span>
+                      </li>
+                      <li class="gap-2">
+                        <span class="icon"><i class="fas fa-bath"></i></span>
+                        <span class="text">3 Baths</span>
+                      </li>
+                    </ul>
+                    <a
+                      href="#"
+                      class="simple-btn text-gray-400 hover:text-orange-400 hover:scale-95"
+                      >Book Now
+                      <span class="icon-right">
+                        <i class="fas fa-arrow-right ml-2"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hover:border-b-4 hover:border-orange-500">
+              <div class="relative">
+                <a href="#">
+                  <img
+                    src="https://wowtheme7.com/tf/cityscape/assets/images/thumbs/property-3.png"
+                    alt=""
+                    class="hover:scale-105 overflow-hidden"
+                  />
+                </a>
+                <span
+                  class="absolute top-0 right-0 bg-orange-400 rounded py-1 px-2"
+                  >Sale</span
+                >
+              </div>
+              <div class="text-white bg-[#232225] px-8">
+                <h6 class="pt-4 text-2xl">
+                  $500.00
+                  <span class="text-sm text-gray-400">/per day</span>
+                </h6>
+                <h6 class="mt-4">
+                  <a href="#" class="text-xl font-serif hover:text-orange-500"
+                    >Paramount Investments Prestige Property Management
+                  </a>
+                </h6>
+                <p class="flex gap-2 my-4 text-gray-400">
+                  <span class="icon">
+                    <i class="fas fa-map-marker-alt"></i
+                  ></span>
+                  66 Broklyant, New York America
+                </p>
+                <div class="border-1px border-gray-500 pb-8">
+                  <div class="mt-2 flex justify-between">
+                    <ul class="flex gap-4 text-sm text-gray-400">
+                      <li class="gap-2">
+                        <span class="icon"><i class="fas fa-bed"></i></span>
+                        <span class="text">3 Beds</span>
+                      </li>
+                      <li class="gap-2">
+                        <span class="icon"><i class="fas fa-bath"></i></span>
+                        <span class="text">3 Baths</span>
+                      </li>
+                    </ul>
+                    <a
+                      href="#"
+                      class="simple-btn text-gray-400 hover:text-orange-400 hover:scale-95"
+                      >Book Now
+                      <span class="icon-right">
+                        <i class="fas fa-arrow-right ml-2"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-white flex justify-center">
+            <a
+              href="#"
+              class="rounded-md cursor-pointer bg-gradient-to-t from-orange-600 to-orange-400 py-4 px-8"
+            >
+              Sell All Listing
+              <span class="icon-right">
+                <i class="fas fa-arrow-right ml-2"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section swiper -->
+
+      <section class="bg-gray-100 py-20 relative">
+        <div class="flex flex-col justify-center items-center pb-3 text-center">
+          <h3
+            class="bg-white text-orange-500 font-bold text-sm px-3 py-1 uppercase leading-5 tracking-widest mb-6"
+          >
+            Latest Portfolio
+          </h3>
+          <h1 class="text-4xl max-w-xl font-serif font-bold">
+            Optimum Homes & Properties Realty Experts
+          </h1>
+        </div>
+        <div class="swiper mySwiper max-w-full">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide group z-1 relative">
+              <img
+                src="https://wowtheme7.com/tf/cityscape/assets/images/thumbs/portfolio4.png"
+                alt=""
+                class="z-1"
+              />
+              <div
+                class="opacity-0 group-hover:opacity-100 transform duration-500 bg-black z-20 absolute bottom-0 text-white p-5"
+              >
+                <h1
+                  class="text-xl hover:text-orange-500 font-semibold text-start mb-3"
+                >
+                  Outsourcing business
+                </h1>
+                <p class="text-start">
+                  Real Estate is a vast industry that deals with the buying,
+                  selling, and renting of properties
+                </p>
+                <div
+                  class="absolute right-10 -top-5 hover:text-slate-300 text-orange-600"
+                >
+                  <ion-icon
+                    name="caret-forward-circle-outline"
+                    class="text-4xl bg-white rounded-full"
+                  ></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide group z-1 relative">
+              <img
+                src="https://wowtheme7.com/tf/cityscape/assets/images/thumbs/portfolio3.png"
+                alt=""
+              />
+              <div
+                class="opacity-0 group-hover:opacity-100 transform duration-500 bg-black z-20 absolute bottom-0 text-white p-5"
+              >
+                <h1
+                  class="text-xl hover:text-orange-500 font-semibold text-start mb-3"
+                >
+                  Outsourcing business
+                </h1>
+                <p class="text-start">
+                  Real Estate is a vast industry that deals with the buying,
+                  selling, and renting of properties
+                </p>
+                <div
+                  class="absolute right-10 -top-5 hover:text-slate-300 text-orange-600"
+                >
+                  <ion-icon
+                    name="caret-forward-circle-outline"
+                    class="text-4xl bg-white rounded-full"
+                  ></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide group z-1 relative">
+              <img
+                src="https://wowtheme7.com/tf/cityscape/assets/images/thumbs/portfolio2.png"
+                alt=""
+              />
+              <div
+                class="opacity-0 group-hover:opacity-100 transform duration-500 bg-black z-20 absolute bottom-0 text-white p-5"
+              >
+                <h1
+                  class="text-xl hover:text-orange-500 font-semibold text-start mb-3"
+                >
+                  Outsourcing business
+                </h1>
+                <p class="text-start">
+                  Real Estate is a vast industry that deals with the buying,
+                  selling, and renting of properties
+                </p>
+                <div
+                  class="absolute right-10 -top-5 hover:text-slate-300 text-orange-600"
+                >
+                  <ion-icon
+                    name="caret-forward-circle-outline"
+                    class="text-4xl bg-white rounded-full"
+                  ></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide group z-1 relative">
+              <img
+                src="https://wowtheme7.com/tf/cityscape/assets/images/thumbs/portfolio1.png"
+                alt=""
+              />
+              <div
+                class="opacity-0 group-hover:opacity-100 transform duration-500 bg-black z-20 absolute bottom-0 text-white p-5"
+              >
+                <h1
+                  class="text-xl hover:text-orange-500 font-semibold text-start mb-3"
+                >
+                  Outsourcing business
+                </h1>
+                <p class="text-start">
+                  Real Estate is a vast industry that deals with the buying,
+                  selling, and renting of properties
+                </p>
+                <div
+                  class="absolute right-10 -top-5 hover:text-slate-300 text-orange-600"
+                >
+                  <ion-icon
+                    name="caret-forward-circle-outline"
+                    class="text-4xl bg-white rounded-full"
+                  ></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide group z-1 relative">
+              <img
+                src="https://wowtheme7.com/tf/cityscape/assets/images/thumbs/portfolio4.png"
+                alt=""
+              />
+              <div
+                class="opacity-0 group-hover:opacity-100 transform duration-500 bg-black z-20 absolute bottom-0 text-white p-5"
+              >
+                <h1
+                  class="text-xl hover:text-orange-500 font-semibold text-start mb-3"
+                >
+                  Outsourcing business
+                </h1>
+                <p class="text-start">
+                  Real Estate is a vast industry that deals with the buying,
+                  selling, and renting of properties
+                </p>
+                <div
+                  class="absolute right-10 -top-5 hover:text-slate-300 text-orange-600"
+                >
+                  <ion-icon
+                    name="caret-forward-circle-outline"
+                    class="text-4xl bg-white rounded-full"
+                  ></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide group z-1 relative">
+              <img
+                src="https://wowtheme7.com/tf/cityscape/assets/images/thumbs/portfolio3.png"
+                alt=""
+              />
+              <div
+                class="opacity-0 group-hover:opacity-100 transform duration-500 bg-black z-20 absolute bottom-0 text-white p-5"
+              >
+                <h1
+                  class="text-xl hover:text-orange-500 font-semibold text-start mb-3"
+                >
+                  Outsourcing business
+                </h1>
+                <p class="text-start">
+                  Real Estate is a vast industry that deals with the buying,
+                  selling, and renting of properties
+                </p>
+                <div
+                  class="absolute right-10 -top-5 hover:text-slate-300 text-orange-600"
+                >
+                  <ion-icon
+                    name="caret-forward-circle-outline"
+                    class="text-4xl bg-white rounded-full"
+                  ></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide group z-1 relative">
+              <img
+                src="https://wowtheme7.com/tf/cityscape/assets/images/thumbs/portfolio2.png"
+                alt=""
+              />
+              <div
+                class="opacity-0 group-hover:opacity-100 transform duration-500 bg-black z-20 absolute bottom-0 text-white p-5"
+              >
+                <h1
+                  class="text-xl hover:text-orange-500 font-semibold text-start mb-3"
+                >
+                  Outsourcing business
+                </h1>
+                <p class="text-start">
+                  Real Estate is a vast industry that deals with the buying,
+                  selling, and renting of properties
+                </p>
+                <div
+                  class="absolute right-10 -top-5 hover:text-slate-300 text-orange-600"
+                >
+                  <ion-icon
+                    name="caret-forward-circle-outline"
+                    class="text-4xl bg-white rounded-full"
+                  ></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide group z-1 relative">
+              <img
+                src="https://wowtheme7.com/tf/cityscape/assets/images/thumbs/portfolio1.png"
+                alt=""
+              />
+              <div
+                class="opacity-0 group-hover:opacity-100 transform duration-500 bg-black z-20 absolute bottom-0 text-white p-5"
+              >
+                <h1
+                  class="text-xl hover:text-orange-500 font-semibold text-start mb-3"
+                >
+                  Outsourcing business
+                </h1>
+                <p class="text-start">
+                  Real Estate is a vast industry that deals with the buying,
+                  selling, and renting of properties
+                </p>
+                <div
+                  class="absolute right-10 -top-5 hover:text-slate-300 text-orange-600"
+                >
+                  <ion-icon
+                    name="caret-forward-circle-outline"
+                    class="text-4xl bg-white rounded-full"
+                  ></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!-- End swiper -->
+      <!-- Section body -->
+      <section class="bg-gray-100 pb-8 relative">
+        <div class="grid grid-cols-2 mx-6 md:mx-8 xl:mx-16 px-3 py-24">
+          <div class="flex flex-col justify-center items-start pb-3 text-start">
+            <h3
+              class="bg-white text-orange-500 font-bold text-sm px-3 py-1 uppercase leading-5 tracking-widest mb-6"
+            >
+              Latest Portfolio
+            </h3>
+            <h1 class="text-4xl max-w-xl font-serif font-bold">
+              Optimum Homes & Properties Realty Experts
+            </h1>
+          </div>
+          <div
+            class="text-start ml-10 lg:mr-48 mt-24 text-gray-500 font-base tracking-widest"
+          >
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+              recusandae, illum quasi, eius similique vel voluptatibus eveniet
+              repudiandae porro, ea aliquid a accusamus libero odio repellat ad
+              sunt ex excepturi?
+            </p>
+          </div>
+          <div class="col-span-2 pt-10 max-w-full relative">
+            <img
+              src="https://wowtheme7.com/tf/cityscape/assets/images/thumbs/testimonial-img.png"
+              alt=""
+              class="w-full pl-10"
+            />
+            <div
+              class="absolute top-28 bg-white p-14 w-2/4 border-collapse rounded-md shadow-md"
+            >
+              <div class="swiper mySwiperContent">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="grid grid-cols-4 text-start">
+                      <div class="flex flex-col col-span-2">
+                        <h3 class="text-xl font-bold">Sakib Fahad</h3>
+                        <h6 class="text-gray-500 font-medium">
+                          Content Creator
+                        </h6>
+                      </div>
+                      <div class="grid grid-cols-subgrid gap-4 col-span-2">
+                        <div
+                          class="col-start-2 flex justify-end items-end text-end"
+                        >
+                          <img
+                            src="https://wowtheme7.com/tf/cityscape/assets/images/icons/quote.svg"
+                            alt=""
+                            class="text-sm"
+                            style="width: 50px; height: 50px"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-span-4 text-start py-10">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Optio, autem! Consectetur illo tempora sed
+                          repudiandae eaque velit expedita, ipsa earum explicabo
+                          libero, voluptatibus aliquid odio
+                        </p>
+                      </div>
+                      <div
+                        class="text-orange-600 text-2xl col-span-4 flex justify-end items-end"
+                      >
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-half"></ion-icon>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid grid-cols-4 text-start">
+                      <div class="flex flex-col col-span-2">
+                        <h3 class="text-xl font-bold">David Nguyen</h3>
+                        <h6 class="text-gray-500 font-medium">Web Developer</h6>
+                      </div>
+                      <div class="grid grid-cols-subgrid gap-4 col-span-2">
+                        <div
+                          class="col-start-2 flex justify-end items-end text-end"
+                        >
+                          <img
+                            src="https://wowtheme7.com/tf/cityscape/assets/images/icons/quote.svg"
+                            alt=""
+                            class="text-sm"
+                            style="width: 50px; height: 50px"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-span-4 text-start py-10">
+                        <p>
+                          Their product exceeded his my routi expectations. The
+                          the quality and attention to detail a the a
+                          moutstanding and it has become an essential most a
+                          education the a man who can do tant clearly
+                        </p>
+                      </div>
+                      <div
+                        class="text-orange-600 text-2xl col-span-4 flex justify-end items-end"
+                      >
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-half"></ion-icon>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute bottom-10">
+                <div class="flex gap-4">
+                  <button
+                    class="swiper-btn-prev rounded-full text-xl p-1 bg-orange-100 hover:bg-orange-500 hover:text-white text-orange-400 hover:-translate-x-1 duration-500 flex justify-center items-center w-10 h-10"
+                    type="button"
+                  >
+                    <ion-icon name="arrow-back"></ion-icon>
+                  </button>
+                  <button
+                    class="swiper-btn-next rounded-full text-xl p-1 bg-orange-100 hover:bg-orange-500 hover:text-white text-orange-400 hover:translate-x-1 duration-500 flex justify-center items-center w-10 h-10"
+                    type="button"
+                  >
+                    <ion-icon name="arrow-forward"></ion-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End  -->
+
+      <!-- view more -->
+      <section class="bg-gray-100">
+        <div class="pb-24 mx-32">
+          <div class="flex justify-between">
+            <div class="basis-1/2">
+              <span
+                class="bg-gray-50 text-lg text-orange-500 rounded-md font-serif p-2"
+                >LATEST PRODUCT</span
+              >
+              <div class="mt-3 font-serif text-4xl">
+                Prestige Propert Management property for you
+              </div>
+            </div>
+            <div
+              class="items-end mt-auto px-4 py-2 border border-solid rounded-md border-orange-500 shadow-md gradient-hover hover:text-white hover:bg-orange-500"
+            >
+              view more +
+            </div>
+          </div>
+
+          <div class="mt-12 grid grid-cols-3 gap-10">
+            <div
+              class="rounded-lg border border-x-gray-200 pb-5 bg-[#f7f7f7fe]"
+            >
+              <div class="border relative border-gray-300">
+                <img
+                  class=""
+                  src="https://wowtheme7.com/tf/cityscape/assets/images/thumbs/blog1.png"
+                />
+
+                <div
+                  class="absolute -bottom-10 right-8 px-3 py-2 rounded-lg bg-[#f7f7f7fe]"
+                >
+                  <div class="text-2xl font-semibold">09</div>
+                  <div class="text-sm text-gray-400">Mar</div>
+                </div>
+              </div>
+              <div class="ml-5 mt-5">
+                <div
+                  class="flex justify-center p-1 py-2 border border-gray-300 w-64 rounded-md"
+                >
+                  <div class="flex mr-4 items-center">
+                    <ion-icon
+                      class="mr-1"
+                      name="person-circle-outline"
+                    ></ion-icon>
+                    <span
+                      class="text-xs text-gray-600 font-thin cursor-pointer hover:text-orange-400"
+                      >By Admin</span
+                    >
+                  </div>
+                  <div class="flex items-center">
+                    <ion-icon
+                      class="w-3.5 mr-1"
+                      name="pricetags-outline"
+                    ></ion-icon>
+                    <span
+                      class="text-xs text-gray-600 font-thin cursor-pointer hover:text-orange-400"
+                      >Comments (05)</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="mt-5 font-semibold cursor-pointer text-lg hover:text-orange-400"
+                >
+                  Discover Endless Possibilities in Real Estate Live Your Best
+                  Life in a New Home
+                </div>
+                <div class="mt-5 group">
+                  <span
+                    class="cursor-pointer hover:text-orange-400 mr-2 font-semibold"
+                    >Book Now</span
+                  >
+                  <span
+                    class="cursor-pointer text-orange-400 hover:-translate-x-2 text-lg"
+                    >+</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded-lg border border-x-gray-200 pb-5 bg-[#f7f7f7fe]"
+            >
+              <div class="border relative border-gray-300">
+                <img
+                  class=""
+                  src="https://wowtheme7.com/tf/cityscape/assets/images/thumbs/blog2.png"
+                />
+
+                <div
+                  class="absolute -bottom-10 right-8 px-3 py-2 rounded-lg bg-[#f7f7f7fe]"
+                >
+                  <div class="text-2xl font-semibold">28</div>
+                  <div class="text-sm text-gray-400">Mar</div>
+                </div>
+              </div>
+              <div class="ml-5 mt-5">
+                <div
+                  class="flex justify-center p-1 py-2 border border-gray-300 w-64 rounded-md"
+                >
+                  <div class="flex mr-4 items-center">
+                    <ion-icon
+                      class="mr-1"
+                      name="person-circle-outline"
+                    ></ion-icon>
+                    <span
+                      class="text-xs text-gray-600 font-thin cursor-pointer hover:text-orange-400"
+                      >By Admin</span
+                    >
+                  </div>
+                  <div class="flex items-center">
+                    <ion-icon
+                      class="w-3.5 mr-1"
+                      name="pricetags-outline"
+                    ></ion-icon>
+                    <span
+                      class="text-xs text-gray-600 font-thin cursor-pointer hover:text-orange-400"
+                      >Comments (05)</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="mt-5 font-semibold cursor-pointer hover:text-orange-400 text-lg"
+                >
+                  Discover Endless Possibilities in Real Estate Live Your Best
+                  Life in a New Home
+                </div>
+                <div class="mt-5 group">
+                  <span
+                    class="cursor-pointer hover:text-orange-400 mr-2 font-semibold"
+                    >Book Now</span
+                  >
+                  <span
+                    class="cursor-pointer text-orange-400 hover:-translate-x-2 text-lg"
+                    >+</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded-lg border border-x-gray-200 pb-5 bg-[#f7f7f7fe]"
+            >
+              <div class="border relative border-gray-300">
+                <img
+                  class=""
+                  src="https://wowtheme7.com/tf/cityscape/assets/images/thumbs/blog1.png"
+                />
+
+                <div
+                  class="absolute -bottom-10 right-8 px-3 py-2 rounded-lg bg-[#f7f7f7fe]"
+                >
+                  <div class="text-2xl font-semibold">16</div>
+                  <div class="text-sm text-gray-400">Mar</div>
+                </div>
+              </div>
+              <div class="ml-5 mt-5">
+                <div
+                  class="flex justify-center p-1 py-2 border border-gray-300 w-64 rounded-md"
+                >
+                  <div class="flex mr-4 items-center">
+                    <ion-icon
+                      class="mr-1"
+                      name="person-circle-outline"
+                    ></ion-icon>
+                    <span
+                      class="text-xs text-gray-600 font-thin cursor-pointer hover:text-orange-400"
+                      >By Admin</span
+                    >
+                  </div>
+                  <div class="flex items-center">
+                    <ion-icon
+                      class="w-3.5 mr-1"
+                      name="pricetags-outline"
+                    ></ion-icon>
+                    <span
+                      class="text-xs text-gray-600 font-thin cursor-pointer hover:text-orange-400"
+                      >Comments (05)</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="mt-5 font-semibold cursor-pointer hover:text-orange-400 text-lg"
+                >
+                  Discover Endless Possibilities in Real Estate Live Your Best
+                  Life in a New Home
+                </div>
+                <div class="mt-5 group">
+                  <span
+                    class="cursor-pointer hover:text-orange-400 mr-2 font-semibold"
+                    >Book Now</span
+                  >
+                  <span
+                    class="cursor-pointer text-orange-400 hover:-translate-x-2 text-lg"
+                    >+</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="bg-black">
+        <div class="max-w-7xl mx-auto px-6 pt-32 grid grid-cols-3 gap-32 pb-10">
+          <div class="text-white">
+            <div>
+              <img
+                class="w-36"
+                src="https://wowtheme7.com/tf/cityscape/assets/images/logo/white-logo.png"
+              />
+            </div>
+            <div class="text-sm text-gray-400 mt-5">
+              It is a long established fact that a reader will be distracted
+            </div>
+            <div class="font-bold text-lg mt-5">Lets Work Together</div>
+            <div class="grid grid-cols-2 gap-5 mt-5">
+              <div class="flex">
+                <div class="mr-3">
+                  <ion-icon
+                    class="text-orange-500"
+                    name="add-circle-outline"
+                  ></ion-icon>
+                </div>
+                <div>
+                  <div class="text-xs text-gray-400">Address</div>
+                  <div class="text-sm">66 Broklyant, New York India</div>
+                </div>
+              </div>
+              <div class="flex">
+                <div class="mr-3">
+                  <ion-icon
+                    class="text-orange-500"
+                    name="call-outline"
+                  ></ion-icon>
+                </div>
+                <div>
+                  <div class="text-xs text-gray-400">Phone Number</div>
+                  <div class="text-sm">012 345 678 9101</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-white">
+            <div class="font-semibold text-xl">Services</div>
+            <div class="mt-5">
+              <ul>
+                <li class="flex items-center mb-2">
+                  <ion-icon
+                    class="text-orange-400 mr-2"
+                    name="code-outline"
+                  ></ion-icon>
+                  <a
+                    href="#"
+                    class="text-sm cursor-pointer hover:text-orange-400"
+                    >Reliable Rentals</a
+                  >
+                </li>
+                <li class="flex items-center mb-2">
+                  <ion-icon
+                    class="text-orange-400 mr-2"
+                    name="code-outline"
+                  ></ion-icon>
+                  <a
+                    href="#"
+                    class="text-sm cursor-pointer hover:text-orange-400"
+                    >Golden Key Properties</a
+                  >
+                </li>
+                <li class="flex items-center mb-2">
+                  <ion-icon
+                    class="text-orange-400 mr-2"
+                    name="code-outline"
+                  ></ion-icon>
+                  <a
+                    href="#"
+                    class="text-sm cursor-pointer hover:text-orange-400"
+                    >Swift Home Sales</a
+                  >
+                </li>
+                <li class="flex items-center mb-2">
+                  <ion-icon
+                    class="text-orange-400 mr-2"
+                    name="code-outline"
+                  ></ion-icon>
+                  <a
+                    href="#"
+                    class="text-sm cursor-pointer hover:text-orange-400"
+                    >Elite Realty Services</a
+                  >
+                </li>
+                <li class="flex items-center mb-2">
+                  <ion-icon
+                    class="text-orange-400 mr-2"
+                    name="code-outline"
+                  ></ion-icon>
+                  <a
+                    href="#"
+                    class="text-sm cursor-pointer hover:text-orange-400"
+                    >Dream Property Solutions</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="text-white">
+            <div class="font-semibold text-xl">Our gallery</div>
+            <div class="text-sm text-gray-400 mt-5">
+              It is a long established fact that reader will be Elite Property
+            </div>
+            <div class="mt-5">
+              <form>
+                <div class="flex">
+                  <input
+                    type="email"
+                    placeholder="Your mail address"
+                    class="bg-black border border-gray-400 p-3 outline-orange-400"
+                  />
+                  <span
+                    class="flex items-center p-3 bg-gradient-to-t from-orange-600 text-white to-orange-400"
+                  >
+                    <button>
+                      <ion-icon name="navigate-outline"></ion-icon>
+                    </button>
+                  </span>
+                </div>
+              </form>
+            </div>
+            <div>
+              <ul
+                class="flex mt-5 p-2 border border-spacing-0.5 border-gray-400 w-32 justify-center rounded-md"
+              >
+                <li class="mr-3 cursor-pointer hover:text-orange-400">
+                  <a
+                    href="https://www.facebook.com"
+                    class="social-list__link flx-center"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li class="mr-3 cursor-pointer hover:text-orange-400">
+                  <a
+                    href="https://www.twitter.com"
+                    class="social-list__link flx-center"
+                  >
+                    <i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="mr-3 cursor-pointer hover:text-orange-400">
+                  <a
+                    href="https://www.linkedin.com"
+                    class="social-list__link flx-center"
+                  >
+                    <i class="fab fa-linkedin-in"></i
+                  ></a>
+                </li>
+                <li class="cursor-pointer hover:text-orange-400">
+                  <a
+                    href="https://www.pinterest.com"
+                    class="social-list__link flx-center"
+                  >
+                    <i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div
+          class="text-white border-t-2 border-gray-600 max-w-7xl mx-auto px-6 pt-10 pb-10 flex justify-between"
+        >
+          <div>
+            <p
+              class="text-sm text-gray-400 cursor-pointer hover:text-orange-400"
+            >
+              © CityScape 2024 | All Rights Reserved.
+            </p>
+          </div>
+          <div>
+            <a
+              href="#"
+              class="mr-3 text-sm text-gray-400 cursor-pointer hover:text-orange-400"
+              >Terms & Condition</a
+            >
+            <a
+              href="#"
+              class="mr-3 text-sm text-gray-400 cursor-pointer hover:text-orange-400"
+              >Privacy Policy</a
+            >
+            <a
+              href="#"
+              class="mr-3 text-sm text-gray-400 cursor-pointer hover:text-orange-400"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./index.js"></script>
+
+    <!-- Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
